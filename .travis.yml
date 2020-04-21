@@ -13,7 +13,7 @@ after_success:
     - docker build -t rudy207/multi-nginx ./nginx
     - docker build -t rudy207/multi-server ./server
     - docker build -t rudy207/multi-worker ./worker
-    #Log in to the docker CLI change
+    #Log in to the docker CLI changes
     - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_ID" --password-stdin
     #Push to docker hub
     - docker push rudy207/multi-client
